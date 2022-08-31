@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="reg.css" />
+  </head>
+  <body>
+    <div>
+      <a href="gлавная.html">
+        <img src="img/logo.png" alt="logo" height="80" class="logo" />
+      </a>
+    </div>
+    <div class="regcontent">
+      <div class="title">
+        Регистрация нового пользователя
+        <hr />
+      </div>
+      <div>
+        <form method="post" name="registration">
+          <div>
+            <b> Здравствуйте, уважаемый посетитель нашего сайта!</b>
+          </div>
+          <div style="margin: 20px 0">
+            <span style="width: 65px; display: inline-block">Логин:</span>
+            <span style="padding-left: 30px">
+              <input type="text" name="name" class="input" />
+            </span>
+          </div>
+          <div style="margin: 20px 0">
+            <span style="width: 65px; display: inline-block">Пароль:</span>
+            <span style="padding-left: 30px">
+              <input type="password" name="password" class="input" required />
+            </span>
+          </div>
+          <div style="margin: 20px 0">
+            <span style="width: 65px; display: inline-block">E-Mail:</span>
+            <span style="padding-left: 30px">
+              <input type="text" name="email" class="input" />
+            </span>
+          </div>
+        </form>
+      </div>
+      <div class="send_div">
+        <button type="submit" name="send" class="send">
+          <span>Отправить</span>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

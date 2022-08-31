@@ -1,0 +1,228 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  outline: none;
+  padding: 0;
+}
+body {
+  height: 100%;
+  font-family: Arial, Georgia, sans-serif;
+  color: #146ba7;
+  background-color: #1f1f1f;
+  padding-left: 10%;
+  padding-top: 20px;
+  padding-right: 10%;
+}
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  min-width: 750px;
+  z-index: -1;
+}
+.container:before {
+  content: " ";
+  display: table;
+}
+div.header-login {
+  height: 95px;
+  line-height: 95px;
+  display: block;
+  float: right;
+  margin-right: 15px;
+}
+.login-content {
+  vertical-align: middle;
+  color: #146ba7;
+  text-decoration: none;
+}
+
+.input-search {
+  width: 130px;
+  border-radius: 5px;
+  background: #1f1f1f;
+  border-style: solid;
+  border-color: #4e4e4e;
+  margin: 7px;
+}
+.button-search {
+  border-radius: 2px;
+  width: 22px;
+  height: 22px;
+  vertical-align: middle;
+  background: #1f1f1f;
+  border-style: solid;
+  border-color: #4e4e4e;
+}
+.header-logo {
+  display: inline-block;
+  vertical-align: middle;
+}
+.header__menu-list {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 7px;
+}
+.header__m-l_content {
+  vertical-align: middle;
+  padding: 7px;
+}
+/* Кнопка, используемая для открытия контактной формы */
+.open-button {
+  background-color: #1f1f1f;
+  color: #146ba7;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+/* Всплывающая форма-скрыта по умолчанию */
+.form-popup {
+  display: none;
+  position: absolute;
+  right: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 6px 12px rgb(255 255 255 / 18%);
+  border-radius: 4px;
+  z-index: 1;
+}
+
+/* Добавление стилей в контейнер форм */
+.form-container {
+  max-width: 240px;
+  padding: 10px;
+  background-color: #1f1f1f;
+  line-height: initial;
+}
+
+/* Поля ввода полной ширины */
+.form-container input[type="text"],
+.form-container input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #1f1f1f;
+  border: 1px solid #f1f1f1;
+}
+
+/* Когда входы получают фокус, сделайте что-нибудь */
+.form-container input[type="text"]:focus,
+.form-container input[type="password"]:focus {
+  background-color: #1f1f1f;
+  outline: none;
+}
+
+/* Установите стиль для кнопки отправить/кнопка */
+.form-container .btn {
+  background-color: #1f1f1f;
+  color: #146ba7;
+  padding: 10px 20px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  border: solid;
+  cursor: pointer;
+  width: 100px;
+  opacity: 0.8;
+  border-color: #0079a7;
+  border-radius: 3px;
+}
+.form-container .btn:hover {
+  color: #0079a7;
+}
+
+/* Добавьте красный цвет фона к кнопке отмена */
+.form-container .cancel {
+  border: solid;
+  background-color: #1f1f1f;
+}
+
+/* Добавьте некоторые эффекты наведения на кнопки */
+.form-container .btn:hover,
+.open-button:hover {
+  opacity: 1;
+}
+.hr-shadow {
+  margin: 20px 0;
+  padding: 0;
+  height: 10px;
+  border: none;
+  border-top: 1px solid #333;
+  box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.row:before {
+  content: " ";
+  display: table;
+}
+.col-xs-12 {
+  width: 100%;
+  float: left;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.col-sm-6 {
+  width: 50%;
+  float: left;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.homepage__category {
+  margin-bottom: 36px;
+}
+.category-list__title {
+  font-size: 16px;
+  color: #80807f;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+.breadcrumbs__item {
+  border-color: #353535;
+  padding: 4px 10px 5px 8px;
+  float: left;
+  border: 2px solid #efefef41;
+  border-radius: 3px;
+  position: relative;
+  margin-bottom: 6px;
+  border-right-style: dashed;
+  border-image: initial;
+  border-right-width: initial;
+}
+.breadcrumbs__item:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 30px;
+  width: 16px;
+}
+a {
+  color: #146ba7;
+  text-decoration: none;
+}
+.subforum__title {
+  color: #80807f;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+.cat-item {
+  padding-left: 25px;
+  position: relative;
+  margin: 15px 0px;
+}
+.cat-item__link {
+  color: #0079a7;
+  text-decoration: none;
+  font-size: 18px;
+}

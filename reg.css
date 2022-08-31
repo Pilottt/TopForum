@@ -1,0 +1,40 @@
+body {
+  background-color: #1f1f1f;
+  font: 12px/1.5 verdana, sans-serif;
+  color: #cdcdd3;
+}
+.regcontent {
+  background-color: #1f1f1f;
+  padding: 20px;
+  border: 3px solid #3c4c40;
+  max-width: 950px;
+  margin: 0 auto;
+}
+.title {
+  font: 18px normal verdana, sans-serif;
+  color: #cdcdd3;
+}
+.input {
+  border: 1px solid #bcc5c9;
+  background-color: #1f1f1f;
+}
+.send_div {
+  padding: 15px 0 15px 0;
+  text-align: left;
+}
+.send {
+  border-color: #768599;
+  color: #a3aebc;
+  margin-left: 10px;
+  vertical-align: middle;
+  border: 1px solid #bcc5c9;
+  border-radius: 6px;
+  padding: 8px 20px 8px 20px;
+  font-weight: bold;
+  background: none;
+  cursor: pointer;
+}
+.logo {
+  display: block;
+  margin: 25px auto 30px;
+}

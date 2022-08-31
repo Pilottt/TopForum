@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TopForum</title>
+    <link rel="stylesheet" href="glav&ahri.css" />
+    <script>
+      function openForm() {
+        document.getElementById("myForm").style.display = "block";
+      }
+
+      function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header-logo">
+        <a href="gлавная.html">
+          <img src="img/logo.png" alt="logo" height="80" />
+        </a>
+      </div>
+      <div class="header__menu-list">
+        <span class="header__m-l_content"> Форум </span>
+        <form action="" style="display: inline; vertical-align: middle">
+          <input class="input-search" type="search" />
+          <button class="button-search" type="submit"></button>
+        </form>
+      </div>
+      <div class="header-login">
+        <img class="login-content" src="img/Vhod.png" alt="input" height="20" />
+        <span style="vertical-align: middle">
+          <button class="open-button" onclick="openForm()">Вход</button>
+          <div class="form-popup" id="myForm">
+            <form action="" class="form-container">
+              <label for="email"></label>
+              <input
+                type="text"
+                placeholder="Логин или e-mail"
+                name="email"
+                required
+              />
+              <label for="psw"></label>
+              <input
+                type="password"
+                placeholder="Пароль"
+                name="password"
+                required
+              />
+              <label>
+                <input type="checkbox" checked="checked" name="remember" />
+                Запомнить меня
+              </label>
+              <button type="submit" class="btn">Войти</button>
+              <button type="button" class="btn cancel" onclick="closeForm()">
+                Закрыть
+              </button>
+            </form>
+          </div>
+        </span>
+        <a href="rегистрационная.html" class="login-content">Регистрация</a>
+      </div>
+      <hr class="hr-shadow" width="100%" />
+    </div>
+    <div class="col-sm-8">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="homepage__category">
+            <div class="category-list">
+              <div class="category-list__title">
+                <p>Обсуждения</p></div>
+              <div class="cat-item">
+                <a href="Ahri.html" class="cat-item__link">Ahri from K/DA the BEST</a>
+              </div>
+              <div class="cat-item">
+                <a href="" class="cat-item__link">Текст</a>
+              </div>
+              <div class="cat-item">
+                <a href="" class="cat-item__link">Текст</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="homepage__category">
+            <div class="category-list">
+              <div class="category-list__title">Текст</div>
+              <div class="cat-item">
+                <a href="" class="cat-item__link">Текст</a>
+              </div>
+              <div class="cat-item">
+                <a href="" class="cat-item__link">Текст</a>
+              </div>
+              <div class="cat-item">
+                <a href="" class="cat-item__link">Текст</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </body>
+</html>
